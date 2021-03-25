@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Oscillator Mobile</title>
+</head>
+<body>
+    <div id="left-box">
+        <input id="freqslider1" type="range" oninput="changeFreq1()" name="" default=0 orient="vertical">
+    </div>
+    <div id="center-left">
+        <button onclick="play1()">
+            start/stop
+        </button><br>
+        <input onchange="changeType1()" type="radio" name="waveform1" checked value="sine">
+        Sine <br>
+        <input onchange="changeType1()" type="radio" name="waveform1" checked value="sawtooth">
+        Sawtooth <br>
+        <input onchange="changeType1()" type="radio" name="waveform1" checked value="triangle">
+        Triangle <br>
+        <input onchange="changeType1()" type="radio" name="waveform1" checked value="square">
+        Square
+    </div>
+    <div id="center-right">
+        <button onclick="play2()">
+            start/stop
+        </button><br>
+        <input onchange="changeType2()" type="radio" name="waveform2" checked value="sine">
+        Sine <br>
+        <input onchange="changeType2()" type="radio" name="waveform2" checked value="sawtooth">
+        Sawtooth <br>
+        <input onchange="changeType2()" type="radio" name="waveform2" checked value="triangle">
+        Triangle <br>
+        <input onchange="changeType2()" type="radio" name="waveform2" checked value="square">
+        Square
+    </div>
+    <div id="right-box">
+        <input id="freqslider2" type="range" oninput="changeFreq2()" name="" default=0 orient="vertical">
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

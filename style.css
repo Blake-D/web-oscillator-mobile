@@ -1,0 +1,41 @@
+body {
+    color: white;
+    background: url("scan_grid.jpeg");
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 25% 25% 25% 25%;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-areas: "LB CL CR RB"
+                            
+}
+
+#left-box{
+    grid-area: LB;
+    border: black solid;
+}
+
+#center-left{
+    grid-area: CL;
+    border: black solid;
+}
+
+#center-right{
+    grid-area: CR;
+    border: black solid;
+}
+
+#right-box{
+    grid-area: RB;
+    border: black solid;
+}
+
+#freqslider1{
+    -webkit-appearance: slider-vertical;
+	writing-mode: bt-lr;
+}
+
+#freqslider2{
+    -webkit-appearance: slider-vertical;
+	writing-mode: bt-lr;
+}
