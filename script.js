@@ -1,13 +1,13 @@
 var play1, play2, oscillator1, oscillator2, changeFreq1, changeFreq2, changeType1, changeType2
 
 var osc1 = {
-    type: "square",
+    type: "sine",
     frequency: 20,
     playing: false
 }
 
 var osc2 = {
-    type: "square",
+    type: "sine",
     frequency: 20,
     playing: false
 }

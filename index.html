@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Web Oscillator Mobile</title>
 </head>
-<body>
+<body class="lock-screen">
     <div id="left-box">
-        <input id="freqslider1" type="range" oninput="changeFreq1()" name="" default=0 orient="vertical">
+        <input id="freqslider1" type="range" oninput="changeFreq1()" name="" default=0 orient="vertical" min="20" max="300" step="1">
     </div>
     <div class="options" id="center-left">
         <button onclick="play1()">
@@ -19,11 +19,11 @@
         <br><br>
         <input onchange="changeType1()" type="radio" name="waveform1" checked value="sine">
         Sine <br>
-        <input onchange="changeType1()" type="radio" name="waveform1" checked value="sawtooth">
+        <input onchange="changeType1()" type="radio" name="waveform1" value="sawtooth">
         Sawtooth <br>
-        <input onchange="changeType1()" type="radio" name="waveform1" checked value="triangle">
+        <input onchange="changeType1()" type="radio" name="waveform1" value="triangle">
         Triangle <br>
-        <input onchange="changeType1()" type="radio" name="waveform1" checked value="square">
+        <input onchange="changeType1()" type="radio" name="waveform1" value="square">
         Square
     </div>
     <div class="options" id="center-right">
@@ -33,15 +33,15 @@
         <br><br>
         <input onchange="changeType2()" type="radio" name="waveform2" checked value="sine">
         Sine <br>
-        <input onchange="changeType2()" type="radio" name="waveform2" checked value="sawtooth">
+        <input onchange="changeType2()" type="radio" name="waveform2" value="sawtooth">
         Sawtooth <br>
-        <input onchange="changeType2()" type="radio" name="waveform2" checked value="triangle">
+        <input onchange="changeType2()" type="radio" name="waveform2" value="triangle">
         Triangle <br>
-        <input onchange="changeType2()" type="radio" name="waveform2" checked value="square">
+        <input onchange="changeType2()" type="radio" name="waveform2" value="square">
         Square
     </div>
     <div id="right-box">
-        <input id="freqslider2" type="range" oninput="changeFreq2()" name="" default=0 orient="vertical">
+        <input id="freqslider2" type="range" oninput="changeFreq2()" name="" default=0 orient="vertical" min="20" max="300" step="1">
     </div>
 </body>
 <script src="script.js"></script>
