@@ -1,5 +1,7 @@
 body {
-    color: white;
+    font-size: 2vw;
+    font-family: 'Press Start 2P', monospace;
+    color: greenyellow;
     background: url("scan_grid.jpeg");
     margin: 0;
     display: grid;
@@ -12,22 +14,18 @@ body {
 
 #left-box{
     grid-area: LB;
-    border: black solid;
 }
 
 #center-left{
     grid-area: CL;
-    border: black solid;
 }
 
 #center-right{
     grid-area: CR;
-    border: black solid;
 }
 
 #right-box{
     grid-area: RB;
-    border: black solid;
 }
 
 #freqslider1{
