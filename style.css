@@ -60,12 +60,12 @@ body {
     padding-top: 20vh;
 }
 
-.lock-screen{
+/* .lock-screen{
     height: 100%;
     overflow: hidden;
     width: 100%;
     position: fixed;
-}
+} */
 
 .blink {
     animation: blinker 1s linear infinite;
