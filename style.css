@@ -57,7 +57,7 @@ body {
 }
 
 .options{
-    padding-top: 30vh;
+    padding-top: 20vh;
 }
 
 .lock-screen{
@@ -65,4 +65,14 @@ body {
     overflow: hidden;
     width: 100%;
     position: fixed;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
 }
