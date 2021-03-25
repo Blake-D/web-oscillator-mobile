@@ -6,34 +6,56 @@ body {
     margin: 0;
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-areas: "LB CL CR RB"
+    grid-template-areas:    "LB CL CR RB"
+                            "LB CL CR RB"
+                            "LB CL CR RB"
                             
 }
 
+#top-pad{
+    grid-area: TP;
+}
+
+#bottom-pad{
+    grid-area: BPl
+}
+
 #left-box{
+    text-align: center;
     grid-area: LB;
 }
 
 #center-left{
+    text-align: center;
     grid-area: CL;
 }
 
 #center-right{
+    text-align: center;
     grid-area: CR;
 }
 
 #right-box{
+    text-align: center;
     grid-area: RB;
 }
 
 #freqslider1{
+    /* width: 95vw; */
+    height: 50vw;
     -webkit-appearance: slider-vertical;
 	writing-mode: bt-lr;
 }
 
 #freqslider2{
+    /* width: 95vw; */
+    height: 50vw;
     -webkit-appearance: slider-vertical;
 	writing-mode: bt-lr;
+}
+
+.options{
+    padding-top: 30vh;
 }

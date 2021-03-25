@@ -12,10 +12,11 @@
     <div id="left-box">
         <input id="freqslider1" type="range" oninput="changeFreq1()" name="" default=0 orient="vertical">
     </div>
-    <div id="center-left">
+    <div class="options" id="center-left">
         <button onclick="play1()">
             start/stop
-        </button><br>
+        </button>
+        <br><br>
         <input onchange="changeType1()" type="radio" name="waveform1" checked value="sine">
         Sine <br>
         <input onchange="changeType1()" type="radio" name="waveform1" checked value="sawtooth">
@@ -25,10 +26,11 @@
         <input onchange="changeType1()" type="radio" name="waveform1" checked value="square">
         Square
     </div>
-    <div id="center-right">
+    <div class="options" id="center-right">
         <button onclick="play2()">
             start/stop
-        </button><br>
+        </button>
+        <br><br>
         <input onchange="changeType2()" type="radio" name="waveform2" checked value="sine">
         Sine <br>
         <input onchange="changeType2()" type="radio" name="waveform2" checked value="sawtooth">
@@ -41,7 +43,6 @@
     <div id="right-box">
         <input id="freqslider2" type="range" oninput="changeFreq2()" name="" default=0 orient="vertical">
     </div>
-
 </body>
 <script src="script.js"></script>
 </html>
