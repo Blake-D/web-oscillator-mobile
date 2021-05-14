@@ -9,11 +9,11 @@
     <title>web oscillator mobile</title>
 </head>
 <body>
+    <div id="top-center"></div>
     <div id="left-box">
         <input id="freqslider1" type="range" oninput="changeFreq1()" name="" default=0 orient="vertical" min="20" max="300" step="0.1">
     </div>
     <div class="options" id="center-left">
-        <h3 class="blink">tilt</h3>
         <button onclick="play1()">
             start/stop
         </button>
@@ -31,7 +31,6 @@
         sine
     </div>
     <div class="options" id="center-right">
-        <h3 class="blink">device</h3>
         <button onclick="play2()">
             start/stop
         </button>
@@ -48,6 +47,7 @@
         <input onchange="changeType2()" type="radio" name="waveform2" value="sine">
         sine
     </div>
+    <div id="bottom-center"></div>
     <div id="right-box">
         <input id="freqslider2" type="range" oninput="changeFreq2()" name="" default=0 orient="vertical" min="20" max="300" step="0.1">
     </div>

@@ -5,74 +5,59 @@ body {
     background: url("scan_grid.jpeg");
     margin: 0;
     display: grid;
-    min-height: 100vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-areas:    "LB CL CR RB"
+    /* height: 100vmin;
+    width: 100vmin; */
+    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:    "LB TC TC RB"
                             "LB CL CR RB"
-                            "LB CL CR RB"
-                            
+                            "LB BC BC RB"                        
 }
 
-#top-pad{
-    grid-area: TP;
+#top-center{
+    grid-area: TC;
 }
 
-#bottom-pad{
-    grid-area: BPl
+#bottom-center{
+    grid-area: BC;
 }
 
 #left-box{
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     grid-area: LB;
 }
 
 #center-left{
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     grid-area: CL;
 }
 
 #center-right{
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     grid-area: CR;
 }
 
 #right-box{
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     grid-area: RB;
 }
 
 #freqslider1{
-    /* width: 95vw; */
-    height: 47vw;
+    height: 99vh;
     -webkit-appearance: slider-vertical;
 	writing-mode: bt-lr;
 }
 
 #freqslider2{
-    /* width: 95vw; */
-    height: 47vw;
+    height: 99vh;
     -webkit-appearance: slider-vertical;
 	writing-mode: bt-lr;
-}
-
-.options{
-    padding-top: 20vh;
-}
-
-/* .lock-screen{
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-} */
-
-.blink {
-    animation: blinker 1s linear infinite;
-}
-  
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
 }
